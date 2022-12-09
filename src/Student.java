@@ -1,11 +1,13 @@
-public class Student {
+public class Student
+{
     private String firstName;
     private String lastName;
     private int id;
     private float gpa;
     private boolean csStudent;
 
-    public Student(String theFirstName, String theLastName, int Theid, float Thegpa, boolean iscsstudent) {
+    public Student(String theFirstName, String theLastName, int Theid, float Thegpa, boolean iscsstudent)
+    {
         firstName = theFirstName;
         lastName = theLastName;
         id = Theid;
@@ -13,61 +15,76 @@ public class Student {
         csStudent = iscsstudent;
     }
 
-    public void setFirstName(String name) {
+    public void setFirstName(String name)
+    {
         firstName = name;
     }
-    public void setLastName(String name) {
+    public void setLastName(String name)
+    {
         lastName = name;
     }
-    public void setID(int id1) {
+    public void setID(int id1)
+    {
         id = id1;
     }
-    public void setGPA(float thegpa) {
+    public void setGPA(float thegpa)
+    {
         gpa = thegpa;
     }
-    public void setCSStudent(boolean isStudent) {
+    public void setCSStudent(boolean isStudent)
+    {
         csStudent = isStudent;
     }
 
-    public Student() {
+    public Student()
+    {
         firstName = "first name goes here";
         lastName = "last name goes here";
         id = 00000000;
         gpa = 0;
         csStudent = false;
     }
-    public String createID() {
+    public String createID()
+    {
         return firstName.substring(0,1) + lastName + (id / 1000);
     }
 
-    public Float CSGPA() {
-        if(csStudent==true) {
+    public Float CSGPA()
+    {
+        if(csStudent==true)
+        {
             return (gpa * 1.15f);
         }
         return gpa;
     }
 
-    public String getFirstName() {
+    public String getFirstName()
+    {
         return firstName;
     }
 
-    public String getLastName() {
+    public String getLastName()
+    {
         return lastName;
     }
 
-    public int getID() {
+    public int getID()
+    {
         return id;
     }
 
-    public float getGPA() {
+    public float getGPA()
+    {
         return gpa;
     }
 
-    public boolean getCSStudent() {
+    public boolean getCSStudent()
+    {
         return csStudent;
     }
 
-    public String toString() {
+    public String toString()
+    {
         String output = "First Name: " + firstName +
                 "\nLast Name: " + lastName +
                 "\nID number: " + id +
@@ -75,4 +92,4 @@ public class Student {
                 "\nThe Student is in computer science: " + csStudent;
         return output;
     }
-}
+}//End student class

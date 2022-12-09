@@ -1,5 +1,7 @@
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         Student Alan = new Student("Alan", "Turing", 191254, 3.56f, true);
         Student Florance = new Student("Florance", "Nightingale", 182010, 3.89f, false);
         Student Grace = new Student("Grace", "Hopper", 190692, 3.99f, true);
@@ -17,6 +19,5 @@ public class Main {
         System.out.println(Alan.CSGPA());
         System.out.println(Florance.CSGPA());
         System.out.println(Grace.CSGPA());
-    }
-
-}
+    }//End main
+}//End main class
